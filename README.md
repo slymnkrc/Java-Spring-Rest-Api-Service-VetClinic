@@ -25,7 +25,25 @@
   <a href="https://github.com/slymnkrc/Java-Spring-Rest-Api-Service-VetClinic">
     <img src="https://img.shields.io/badge/Swagger-v3.0.0-84b6eb" alt="Log4j" data-canonical-src="https://img.shields.io/badge/Swagger-v3.0.0-84b6eb" style="max-width:           100%;">
   </a>
+  <a href="https://github.com/slymnkrc/Java-Spring-Rest-Api-Service-VetClinic">
+    <img src="https://img.shields.io/badge/Docker-v4.0.1-d4c5f9" alt="Log4j" data-canonical-src="https://img.shields.io/badge/Swagger-v4.0.1-d4c5f9" style="max-width:           100%;">
+  </a>
 </p>
+
+This project provides the REST API service of the <a href="https://github.com/slymnkrc/Java-SpringMVC-VetClinic-Project">"Vet Clinic - Spring MVC"</a> project. In addition to all these, elasticsearch is used in all search operations in the program. Redis is listed of city, and list of towns by the number plate.
+
+Redis and elasticsearch applications were run over Docker. Necessary configuration settings are made in the "Config" package and "application.properties" files in the project. If you want to change this configuration setting, check these files.
+
+Below are the ready-made admin information registered to the system. You can login to the application with this username and password.
+
+## User Information:
+
+| Email/Username | Password | Role |
+| ------------- |:-------------:| :-------------:|
+| slymn@mail.com  | 12345 | Admin |
+| eruyar123@gmail.com  | 12345 | Admin |
+| veli@mail.com  | 12345 | Secretary |
+| berat@mail.com  | 12345 | Doctor |
 
 <li>
   :arrow_right:  Java
