@@ -1,0 +1,31 @@
+2021-09-29 22:05:28 ERROR Patient:28 - Silme işlemi sırasında bir hata oluştu!java.util.NoSuchElementException: No value present
+2021-09-29 22:06:18 ERROR Patient:28 - Silme işlemi sırasında bir hata oluştu!java.util.NoSuchElementException: No value present
+2021-09-29 22:06:27 ERROR Patient:28 - Silme işlemi sırasında bir hata oluştu!java.util.NoSuchElementException: No value present
+2021-09-29 22:07:57 ERROR Patient:28 - Silme işlemi sırasında bir hata oluştu!java.util.NoSuchElementException: No value present
+2021-09-29 22:10:42 ERROR Patient:28 - Silme işlemi sırasında bir hata oluştu!java.util.NoSuchElementException: No value present
+2021-09-29 22:18:42 ERROR Patient:28 - Silme işlemi sırasında bir hata oluştu!java.util.NoSuchElementException: No value present
+2021-09-29 22:18:43 ERROR Patient:28 - Silme işlemi sırasında bir hata oluştu!java.util.NoSuchElementException: No value present
+2021-09-29 22:18:58 ERROR Patient:28 - Silme işlemi sırasında bir hata oluştu!java.util.NoSuchElementException: No value present
+2021-09-30 00:36:36 ERROR Treatment:28 - Güncelleme işlemi yapılacak muayene bilgisi bulunamadı!
+2021-09-30 20:46:46 ERROR Supplier:28 - Silmek istenen tedarikçi bulunamadı!
+2021-09-30 20:46:54 ERROR Supplier:28 - Silme işlemi sırasında bir hata oluştu!java.lang.NumberFormatException: For input string: "aşd"
+2021-09-30 20:47:49 ERROR Supplier:28 - Bu e-mail adresi, telefon ya da isim ile daha önce kayıt yapılmış!
+2021-09-30 21:52:42 ERROR Agenda:28 - Silme işlemi sırasında bir hata oluştu!java.lang.NumberFormatException: For input string: "dfhg"
+2021-09-30 21:52:46 ERROR Agenda:28 - Silmek istenen ajanda notu bulunamadı!
+2021-09-30 23:08:51 ERROR Storage:28 - Silme işlemi sırasında bir hata oluştu!java.lang.NumberFormatException: For input string: "rfdshg"
+2021-09-30 23:08:55 ERROR Storage:28 - Silmek istenen depo bulunamadı!
+2021-10-01 01:08:39 ERROR Vaccine:28 - Silmek istenen müşteri bulunamadı!
+2021-10-01 01:09:51 ERROR Vaccine:28 - Silmek istenen aşı bulunamadı!
+2021-10-01 01:10:00 ERROR Vaccine:28 - Silme işlemi sırasında bir hata oluştu!java.lang.NumberFormatException: For input string: "gmjb"
+2021-10-01 01:12:29 ERROR Vaccine:28 - Güncelleme işlemi yapılacak aşı bulunamadı!
+2021-10-01 21:12:41 ERROR Sales:28 - Listeleme sırasında bir hata oluştu!java.lang.IllegalArgumentException: Page index must not be less than zero!
+2021-10-02 00:44:48 ERROR Laboratory:28 - Laboratuvar sonucu eklerken bir hata oluştu!
+2021-10-02 01:06:31 ERROR Laboratory:28 - Silme işlemi sırasında bir hata oluştu!java.lang.NumberFormatException: For input string: "ftrgdj"
+2021-10-02 01:09:07 ERROR Laboratory:28 - Silmek istenen laboratuvar sonucu bulunamadı!
+2021-10-02 11:58:25 ERROR PayIn:28 - Kasa giriş işlemi sırasında bir hata oluştu!
+2021-10-02 12:01:31 ERROR PayIn:28 - Kasa giriş işlemi sırasında bir hata oluştu!
+2021-10-02 12:13:54 ERROR PayIn:28 - Ödenen toplam miktar borçtan daha fazla!
+2021-10-02 12:16:21 ERROR PayIn:28 - Ödenen toplam miktar borçtan daha fazla!
+2021-10-02 13:01:57 ERROR PayIn:28 - Silmek istenen kasa giriş verisi bulunamadı!
+2021-10-06 00:14:39 ERROR User:18 - Listeleme sırasında bir hata oluştu!java.lang.IllegalArgumentException: Page index must not be less than zero!
+2021-10-06 00:31:01 ERROR Laboratory:18 - Silmek istenen laboratuvar sonucu bulunamadı!

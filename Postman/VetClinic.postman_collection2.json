@@ -1,0 +1,1323 @@
+{
+	"info": {
+		"_postman_id": "2bb4382a-be68-4eb3-928c-b4922b7c1dad",
+		"name": "VetClinic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Supplier",
+			"item": [
+				{
+					"name": "Supplier -> List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/supplier/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Supplier -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/supplier/delete/4"
+					},
+					"response": []
+				},
+				{
+					"name": "Supplier -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"supName\":\"abc\",\r\n    \"supEmail\":\"abc@mail.com\",\r\n    \"supPhone\":\"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/supplier/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Supplier -> ListPageable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/supplier/list/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Supplier -> Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"supId\": 1,\r\n            \"supName\": \"Yarbay \",\r\n            \"supEmail\": \"karaca@mail.com\",\r\n            \"supPhone\": \"05548398073\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/supplier/update"
+					},
+					"response": []
+				},
+				{
+					"name": "Supplier -> Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/supplier/search/0/abc"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Storage",
+			"item": [
+				{
+					"name": "Storage -> List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/storage/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Storage -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"storName\": \"Servis Ödevi Deneme\",\r\n    \"storNo\": \"654654654\",\r\n    \"storStatus\": \"Açık\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/storage/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Storage -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/storage/delete/9"
+					},
+					"response": []
+				},
+				{
+					"name": "Storage -> Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"storId\": 3,\r\n    \"storName\": \"Deneme-4\",\r\n    \"storNo\": \"949792871\",\r\n    \"storStatus\": \"Açık\"\r\n}\r\n            ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/storage/update"
+					},
+					"response": []
+				},
+				{
+					"name": "Storage -> ListPageable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/storage/list/0"
+					},
+					"response": []
+				},
+				{
+					"name": "Storage -> Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/storage/search/0/servis"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Customer -> List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/customer/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"cuName\": \"Servis Deneme\",\r\n            \"cuSurname\": \"Servis Deneme\",\r\n            \"cuTax\": \"46546565\",\r\n            \"cuTaxOffice\": \"Ankara\",\r\n            \"cuPhone\": \"6465465465\",\r\n            \"cuPhone2\": \"\",\r\n            \"cuEmail\": \"hakan@mail.com\",\r\n            \"cuType\": \"Bireysel\",\r\n            \"cuCity\": 60,\r\n            \"cuTown\": \"Levent\",\r\n            \"cuAddress\": \"Deneme Bulvarı\",\r\n            \"cuNote\": \"Deneme Servis İşlemi \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/customer/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer -> Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/customer/search/0/deneme"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/customer/delete/13"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer -> Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"cuId\": 15,\r\n            \"cuName\": \"Servis Deneme\",\r\n            \"cuSurname\": \"Servis Deneme\",\r\n            \"cuTax\": \"46546565\",\r\n            \"cuTaxOffice\": \"Ankara\",\r\n            \"cuPhone\": \"6465465465\",\r\n            \"cuPhone2\": \"\",\r\n            \"cuEmail\": \"denemeee@mail.com\",\r\n            \"cuType\": \"Bireysel\",\r\n            \"cuCity\": 60,\r\n            \"cuTown\": \"Levent\",\r\n            \"cuAddress\": \"Deneme Bulvarı\",\r\n            \"cuNote\": \"Deneme Servis İşlemi \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/customer/update"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer -> ListPageable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/customer/list/0"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "Patient -> List",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "veli@mail.com",
+								"password": "12345"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/patient/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Patient -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \r\n            \"customerId\": 5,\r\n            \"paName\": \"Karamel\",\r\n            \"paChipNo\": \"00231527426\",\r\n            \"paAirTagNo\": \"31252070624\",\r\n            \"paBirthDate\": \"2021-07-06\",\r\n            \"paType\": \"Köpek\",\r\n            \"paSpay\": \"Hayır\",\r\n            \"paKind\": \"Kangal\",\r\n            \"paColor\": \"Siyah\",\r\n            \"paSexType\": \"Erkek\",\r\n            \"saveDate\": \"01-10-2021\",\r\n             \"customer\": \r\n             {\r\n                \"cuId\": 5\r\n            }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/patient/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Patient -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/patient/delete/10"
+					},
+					"response": []
+				},
+				{
+					"name": "Patient -> ListPageable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/patient/list/0"
+					},
+					"response": []
+				},
+				{
+					"name": "Patient -> Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"paId\": 9,\r\n            \"customerId\": 10,\r\n            \"paName\": \"Çamur\",\r\n            \"paChipNo\": \"0314658\",\r\n            \"paAirTagNo\": \"0976431\",\r\n            \"paBirthDate\": \"2021-09-01\",\r\n            \"paType\": \"Kedi\",\r\n            \"paSpay\": \"Evet\",\r\n            \"paKind\": \"Scotish(Güncel)\",\r\n            \"paColor\": \"Gri\",\r\n            \"paSexType\": \"Erkek\",\r\n            \"saveDate\": null,\r\n            \"customer\": {\r\n                \"cuId\": 10,\r\n                \"cuName\": \"Hakan\",\r\n                \"cuSurname\": \"Özer\",\r\n                \"cuTax\": \"45697833346\",\r\n                \"cuTaxOffice\": \"\",\r\n                \"cuPhone\": \"05567986413\",\r\n                \"cuPhone2\": \"\",\r\n                \"cuEmail\": \"hakan@mail.com\",\r\n                \"cuType\": \"Bireysel\",\r\n                \"cuCity\": 34,\r\n                \"cuTown\": \"Leven\",\r\n                \"cuAddress\": \"İstanbul/Levent\",\r\n                \"cuNote\": \"Not-Detay\"\r\n            }\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/patient/update"
+					},
+					"response": []
+				},
+				{
+					"name": "Patient -> Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/patient/search/0/kangal"
+					},
+					"response": []
+				},
+				{
+					"name": "Patient -> List(PatientByCustomerID)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/patient/list/patientsbycustomerid/5"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Product -> List",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "veli@mail.com",
+								"password": "12345"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/productDefinition/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Product -> ListPageable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/productDefinition/list/0"
+					},
+					"response": []
+				},
+				{
+					"name": "Product -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"proName\": \"Servis Deneme Ürünü\",\r\n            \"proUnit\": \"Adet\",\r\n            \"proCategory\": \"Mama\",\r\n            \"proDetail\": \"Servis Ürün Denemesi\",\r\n            \"proType\": \"A\",\r\n            \"proSupplier\": \"Süleyman\",\r\n            \"proBarcode\": \"6416516\",\r\n            \"proCode\": \"64654654\",\r\n            \"proTax\": \"%18\",\r\n            \"proBuyingPrice\": \"10\",\r\n            \"proSalesPrice\": \"20\",\r\n            \"proQuantity\": \"30 \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/productDefinition/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Product -> Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"proId\": 6,\r\n            \"proName\": \"Servis Deneme Ürünü\",\r\n            \"proUnit\": \"Adet\",\r\n            \"proCategory\": \"Mama\",\r\n            \"proDetail\": \"Servis Ürün Denemesi\",\r\n            \"proType\": \"A\",\r\n            \"proSupplier\": \"1\",\r\n            \"proBarcode\": 6416516,\r\n            \"proCode\": 64654654,\r\n            \"proTax\": \"%18\",\r\n            \"proBuyingPrice\": 10,\r\n            \"proSalesPrice\": 20,\r\n            \"proQuantity\": 30 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/productDefinition/update"
+					},
+					"response": []
+				},
+				{
+					"name": "Product -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/productDefinition/delete/7"
+					},
+					"response": []
+				},
+				{
+					"name": "Product -> Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/productDefinition/search/0/mama"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vaccine",
+			"item": [
+				{
+					"name": "Vaccine -> List",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "veli@mail.com",
+								"password": "12345"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/vaccine/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccine -> ListPageable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/patient/list/0"
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccine -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/delete/0"
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccine -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "        {\r\n            \"vacName\": \"Servis Aşı Deneme2\",\r\n            \"vacUnit\": \"Adet\",\r\n            \"vacCategory\": \"ServisDeneme2\",\r\n            \"vacDetail\": \"ServisDeneme2\",\r\n            \"vacType\": \"Pet Aşı\",\r\n            \"vacSupplier\": \"1\",\r\n            \"vacBarcode\": 8918918,\r\n            \"vacCode\": 4564116,\r\n            \"vacTax\": \"3\",\r\n            \"vacBuyingPrice\": 21,\r\n            \"vacSalesPrice\": 100,\r\n            \"vacQuantity\": 56\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/vaccine/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccine -> Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"vacid\": 7,\r\n            \"vacName\": \"Servis Aşı Deneme2\",\r\n            \"vacUnit\": \"Adet\",\r\n            \"vacCategory\": \"ServisDeneme2\",\r\n            \"vacDetail\": \"ServisDeneme2\",\r\n            \"vacType\": \"Pet Aşı\",\r\n            \"vacSupplier\": \"1\",\r\n            \"vacBarcode\": 8918918,\r\n            \"vacCode\": 4564116,\r\n            \"vacTax\": \"3\",\r\n            \"vacBuyingPrice\": 21,\r\n            \"vacSalesPrice\": 100,\r\n            \"vacQuantity\": 100\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/vaccine/update"
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccine -> Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/vaccine/search/0/Servis Aşı Deneme2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Treatment",
+			"item": [
+				{
+					"name": "Treatment -> List",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "veli@mail.com",
+								"password": "12345"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/treatment/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Treatment -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n            \r\n            \"treNote\": \"Servis-Deneme 45\",\r\n            \"treLab\": \"Kan Tahlili\",\r\n            \"treOperation\": \"Hayır\",\r\n            \"treDressing\": \"Hayır\",\r\n            \"treRadiography\": \"Röntgen\",\r\n            \"treMedicine\": \"Gıda Takviyesi\",\r\n            \"treCode\": 448249314,\r\n            \"customer\": {\r\n                \"cuId\": 5,\r\n                \"cuName\": \"Süleyman\"\r\n            },\r\n            \"patient\": {\r\n                \"paId\": 14,\r\n                \"paName\": \"Karamel\"\r\n            },\r\n            \"vaccine\": {\r\n                \"vacid\": 2,\r\n                \"vacName\": \"Kuduz\"\r\n            }\r\n        }\r\n        \r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/treatment/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Treatment -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/treatment/delete/5"
+					},
+					"response": []
+				},
+				{
+					"name": "Treatment -> ListPageable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/treatment/list/0"
+					},
+					"response": []
+				},
+				{
+					"name": "Treatment -> Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"treId\": 2,\r\n            \"treNote\": \"Servis-Deneme\",\r\n            \"treLab\": \"Kan Tahlili\",\r\n            \"treOperation\": \"Hayır\",\r\n            \"treDressing\": \"Hayır\",\r\n            \"treRadiography\": \"Röntgen\",\r\n            \"treMedicine\": \"Gıda Takviyesi\",\r\n            \"treCode\": 448249614,\r\n            \"customer\": {\r\n                \"cuId\": 9\r\n            },\r\n            \"patient\": {\r\n                \"paId\": 6\r\n            },\r\n            \"vaccine\": {\r\n                \"vacid\": 2\r\n            }}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/treatment/update"
+					},
+					"response": []
+				},
+				{
+					"name": "Treatment -> Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/treatment/search/0/deneme"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sales",
+			"item": [
+				{
+					"name": "Sales -> List",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "veli@mail.com",
+								"password": "12345"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/sales/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Sales -> ListPageable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/sales/list/0"
+					},
+					"response": []
+				},
+				{
+					"name": "Sales -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n            \"saPrAmount\": \"2\",\r\n            \"saVacAmount\": \"0\",\r\n            \"saNote\": \"servis deneme2\",\r\n            \"saPayType\": \"4\",\r\n            \"saLabType\": \"1\",\r\n            \"saReceiptNo\": \"426905829\",\r\n            \"saSoldDate\": \"2021-09-23 22:55:31\",\r\n            \"customer\": {\r\n                \"cuId\": 9,\r\n                \"cuName\":\"Samet\"\r\n            },\r\n            \"patient\": {\r\n                \"paId\": 6,\r\n                \"paName\": \"Paşa\"\r\n            },\r\n            \"vaccine\": {\r\n                \"vacid\": 2,\r\n                \"vacName\": \"Kuduz\"\r\n            },\r\n            \"product\": {\r\n                \"proId\": 2,\r\n                \"proName\": \"Köpek Maması\"\r\n            }\r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/sales/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Sales -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/sales/delete/15"
+					},
+					"response": []
+				},
+				{
+					"name": "Sales -> Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n            \"saId\":13,\r\n            \"saPrAmount\": \"2\",\r\n            \"saVacAmount\": \"0\",\r\n            \"saNote\": \"servis deneme update\",\r\n            \"saPayType\": \"4\",\r\n            \"saLabType\": \"1\",\r\n            \"saReceiptNo\": \"4269051829\",\r\n            \"saSoldDate\": \"2021-09-23 22:55:31\",\r\n            \"customer\": {\r\n                \"cuId\": 9,\r\n                \"cuName\":\"Samet\"\r\n            },\r\n            \"patient\": {\r\n                \"paId\": 6,\r\n                \"paName\": \"Paşa\"\r\n            },\r\n            \"vaccine\": {\r\n                \"vacid\": 2,\r\n                \"vacName\": \"Kuduz\"\r\n            },\r\n            \"product\": {\r\n                \"proId\": 2,\r\n                \"proName\": \"Köpek Maması\"\r\n            }\r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/sales/update"
+					},
+					"response": []
+				},
+				{
+					"name": "Sales -> Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/sales/search/0/samet"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Buying",
+			"item": [
+				{
+					"name": "Buying -> List",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "veli@mail.com",
+								"password": "12345"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/buying/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Buying -> ListPageable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/buying/list/0"
+					},
+					"response": []
+				},
+				{
+					"name": "Buying -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"buyReceiptNo\": 4351511241,\r\n            \"buyAmount\": \"5\",\r\n            \"buyNote\": \"1 adet masa alındı. Servis - Deneme\",\r\n            \"buyUnit\": \"2\",\r\n            \"buyDate\": \"04-10-2021\",\r\n            \"supplier\": {\r\n                \"supId\": 2,\r\n                \"supName\": \"Karaca\"\r\n            },\r\n            \"supplierProduct\": {\r\n                \"supProId\": 10,\r\n                \"supProName\": \"Muayene Masası\",\r\n                \"supplier\": {\r\n                    \"supId\": 2,\r\n                    \"supName\": \"Karaca\"\r\n                }\r\n            }\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/buying/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Buying -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/buying/delete/12"
+					},
+					"response": []
+				},
+				{
+					"name": "Buying -> Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "http://localhost:8080/buying/update"
+					},
+					"response": []
+				},
+				{
+					"name": "Buying -> Search",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "veli@mail.com",
+								"password": "12345"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/buying/search/0/masa"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PayOut",
+			"item": [
+				{
+					"name": "PayOut -> List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/payout/list"
+					},
+					"response": []
+				},
+				{
+					"name": "PayOut -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"poutNote\": \"Masanın ücreti nakit ödendi. Deneme servisi\",\r\n            \"poutAmount\": 200,\r\n            \"poutPayType\": \"4\",\r\n            \"createdDate\": \"24-09-2021 01:13:29\",\r\n            \"buying\": {\r\n                \"buyId\": 6,\r\n                \"buyReceiptNo\": 4351511241,\r\n                \"buyDate\": \"04-10-2021\"\r\n            }\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/payout/add"
+					},
+					"response": []
+				},
+				{
+					"name": "PayOut -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/payout/delete/15"
+					},
+					"response": []
+				},
+				{
+					"name": "PayOut -> Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"poId\": 6,\r\n            \"poutNote\": \"Masanın ücreti nakit ödendi. Deneme servisi\",\r\n            \"poutAmount\": 200,\r\n            \"poutPayType\": \"4\",\r\n            \"createdDate\": \"24-09-2021 01:13:29\",\r\n            \"buying\": {\r\n                \"buyId\": 6,\r\n                \"buyReceiptNo\": 4351511241,\r\n                \"buyAmount\": \"5\",\r\n                \"supplier\": {\r\n                    \"supId\": 2,\r\n                    \"supName\": \"Karaca\",\r\n                    \"supEmail\": \"karaca@mail.com\",\r\n                    \"supPhone\": \"05546731264\"\r\n                },\r\n                \"supplierProduct\": {\r\n                    \"supProId\": 10,\r\n                    \"supProName\": \"Muayene Masası\",\r\n                    \"supProUnit\": \"Adet\",\r\n                    \"supProPrice\": 500,\r\n                    \"supplier\": {\r\n                        \"supId\": 2,\r\n                        \"supName\": \"Karaca\",\r\n                        \"supEmail\": \"karaca@mail.com\",\r\n                        \"supPhone\": \"05546731264\"\r\n                    }\r\n                }\r\n            }\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/payout/update"
+					},
+					"response": []
+				},
+				{
+					"name": "PayOut -> ListPageable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/payout/list/0"
+					},
+					"response": []
+				},
+				{
+					"name": "PayOut -> Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/payout/search/0/4351511241"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PayIn",
+			"item": [
+				{
+					"name": "PayIn -> List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/payIn/list"
+					},
+					"response": []
+				},
+				{
+					"name": "PayIn -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"pinNote\": \"Servis Deneme\",\r\n            \"pinAmount\": 50,\r\n            \"pinPayType\": \"2\",\r\n            \"createdDate\": \"06-10-2021 03:05:02\",\r\n            \"sales\": {\r\n                \"saId\": 6,\r\n                \"saPrAmount\": \"5\",\r\n                \"saVacAmount\": \"1\",\r\n                \"saNote\": \"Satış Notu\",\r\n                \"saPayType\": \"4\",\r\n                \"saLabType\": \"2\",\r\n                \"saReceiptNo\": \"614664192\",\r\n                \"saSoldDate\": \"26-09-2021\",\r\n                \"customer\": {\r\n                    \"cuId\": 11\r\n                },\r\n                \"patient\": {\r\n                    \"paId\": 10,\r\n                    \"customerId\": 11,\r\n                    \"customer\": {\r\n                        \"cuId\": 11\r\n                    }\r\n                },\r\n                \"vaccine\": {\r\n                    \"vacid\": 2                },\r\n                \"product\": {\r\n                    \"proId\": 1\r\n                }\r\n            }\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/payIn/add"
+					},
+					"response": []
+				},
+				{
+					"name": "PayIn -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/payin/delete/162"
+					},
+					"response": []
+				},
+				{
+					"name": "PayIn -> Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "http://localhost:8080/payin/update"
+					},
+					"response": []
+				},
+				{
+					"name": "PayIn -> GetCustomerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/payIn/invoiceList/5"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Calendar",
+			"item": [
+				{
+					"name": "CalendarDetail -> List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/calendar/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Calendar -> ListPageable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/calendar/list/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Calendar -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/calendar/delete/11"
+					},
+					"response": []
+				},
+				{
+					"name": "Calendar -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"id\":312312312312231321,\r\n        \r\n            \"title\": \"Kısırlaştırma\",\r\n            \"isAllDay\": false,\r\n            \"start\": \"Thu Oct 5 2021 10:00:00 GMT+0300 (GMT+03:00)\",\r\n            \"end\": \"Thu Oct 5 2021 11:00:00 GMT+0300 (GMT+03:00)\",\r\n            \"category\": \"time\",\r\n            \"dueDateClass\": \"\",\r\n            \"color\": \"#ffffff\",\r\n            \"bgColor\": \"#ea5455\",\r\n            \"dragBgColor\": \"#ea5455\",\r\n            \"borderColor\": \"#ea5455\",\r\n            \"location\": \"İstanbul\",\r\n            \"raw\": \"public\",\r\n            \"state\": \"Meşkul\",\r\n            \"calendarId\": \"2\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/calendar/add"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Account -> UploadProfileImages",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8080/account/upload"
+					},
+					"response": []
+				},
+				{
+					"name": "Account -> ChangePassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8080/account/changePass"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Home",
+			"item": [
+				{
+					"name": "Home -> PriceChart",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "veli@mail.com",
+								"password": "12345"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/home/priceChart"
+					},
+					"response": []
+				},
+				{
+					"name": "Home -> GeneralStatics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/home/generalStatics"
+					},
+					"response": []
+				},
+				{
+					"name": "Home -> PatientTable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/home/patientTable"
+					},
+					"response": []
+				},
+				{
+					"name": "Home -> Schedule",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/home/schedule/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AccountActivity",
+			"item": [
+				{
+					"name": "AccountActivity -> List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/accountActivity"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agenda",
+			"item": [
+				{
+					"name": "Agenda -> List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/agenda/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Agenda -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n            \"agendaTitle\": \"Servis Deneme \",\r\n            \"agendaDate\": \"05-10-2021\",\r\n            \"agendaNote\": \"Randevular alınan izinlere göre düzenlenecek.\",\r\n            \"saveDate\": \"03-10-2021\",\r\n            \"uid\": 3\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/agenda/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Agenda -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/agenda/delete/5"
+					},
+					"response": []
+				},
+				{
+					"name": "Agenda -> Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "        {\r\n            \"agendaId\": 6,\r\n            \"agendaTitle\": \"Servis Deneme \",\r\n            \"agendaDate\": \"05-10-2021\",\r\n            \"agendaNote\": \"Randevular alınan izinlere göre düzenlenecek.\",\r\n            \"saveDate\": \"03-10-2021\",\r\n            \"uid\": 3\r\n        }"
+						},
+						"url": "localhost:8080/agenda/update"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CityAndTown",
+			"item": [
+				{
+					"name": "CityAndTown",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/cat/listCity"
+					},
+					"response": []
+				},
+				{
+					"name": "CityAndTown -> Add",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/cat/add"
+					},
+					"response": []
+				},
+				{
+					"name": "CityAndTown -> TownByCity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/cat/listTownsById/58"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SettingsUser",
+			"item": [
+				{
+					"name": "User -> Pagination",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "slymn@mail.com",
+								"password": "12345"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/settingsUsers/list/1"
+					},
+					"response": []
+				},
+				{
+					"name": "User -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/settingsUsers/delete/"
+					},
+					"response": []
+				},
+				{
+					"name": "User -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \"enabled\": true,\r\n                \"tokenExpired\": true,\r\n                \"upassword\": \"12345\",\r\n                \"uid\": 1,\r\n                \"uroleStatus\": 3,\r\n                \"uname\": \"Servis Deneme\",\r\n                \"uemail\": \"servisdeneme@gmail.com\",\r\n                \"usurname\": \"deneme\",\r\n                \"uphone\": \"05312321073\",\r\n                \"ufirmName\": \"Vet Klinik\"\r\n            }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/settingsUsers/add"
+					},
+					"response": []
+				},
+				{
+					"name": "User -> Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \"enabled\": true,\r\n                \"tokenExpired\": true,\r\n                \"uid\": 4,\r\n                \"upassword\": \"$2a$10$a5h/n6h0YXTVGUw.MRHWfOjhq5bbxhh9nQn0kIay2fumZ6lXlUByW\",\r\n                \"uprofileImage\": \"defaultProfileImage.png\",\r\n                \"uemail\": \"ali@mail.com\",\r\n                \"uroleStatus\": 1,\r\n                \"usurname\": \"Bilmem\",\r\n                \"uname\": \"Ali\",\r\n                \"uphone\": \"05540000098\",\r\n                \"ufirmName\": \"Vet Klinik\"\r\n            }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/settingsUsers/update"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"item": [
+				{
+					"name": "Register -> Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uName\":\"Süleyman\",\r\n    \"uSurname\":\"Karaca\",\r\n    \"uEmail\":\"slymnkrc@gmail.com\",\r\n    \"uPhone\":\"12345678910\",\r\n    \"uFirmName\":\"KRC\",\r\n    \"uPassword\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/register/add"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Laboratory",
+			"item": [
+				{
+					"name": "Laboratory -> ListPageable",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "veli@mail.com",
+								"password": "12345"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/laboratory/list/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Laboratory -> Add",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "veli@mail.com",
+								"password": "12345"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "labCuId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "labType",
+									"value": "Röntgen",
+									"type": "text"
+								},
+								{
+									"key": "fileName",
+									"type": "file",
+									"src": "/C:/Users/KARACA/Desktop/VetClinicRestApi/VetClinicRestApi/src/main/resources/static/uploadImages/2efb9f17-d092-4840-a6e8-e4db6b03331e1.jpg"
+								},
+								{
+									"key": "labNote",
+									"value": "Servis Deneme",
+									"type": "text"
+								},
+								{
+									"key": "labPaId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "labDate",
+									"value": "22-09-2021",
+									"type": "text"
+								},
+								{
+									"key": "patient.paId",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/laboratory/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Laboratory -> ResultDetail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/laboratory/detail/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Laboratory -> Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/laboratory/delete/12"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LogOut",
+			"item": [
+				{
+					"name": "LogOut -> Logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/admin/logout"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
