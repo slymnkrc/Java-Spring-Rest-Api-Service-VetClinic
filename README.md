@@ -1,6 +1,6 @@
 # Java Spring Rest Api Service VetClinic  
 
-## Tools and Technologies:
+
 
 
 <p>
